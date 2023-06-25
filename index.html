@@ -8,11 +8,33 @@
     <link rel="stylesheet" href="./src/styles/index.css" />
     <title>Open Music</title>
   </head>
-  <body>
-    <header></header>
-    <main></main>
+  <body class="container">
+    <header class="header__container">
+      <h1 class="header__tittle">Open Music</h1>
+      <button id="headerDarkModeButton">Dark Mode</button>
+    </header>
+    <main>
+      <section class="section__filters">
+        <div class="filters__container">
+          <h2 class="filters__tittle--1">Gênero Musical</h2>
+          <ul class="filters__buttons"></ul>
+          </div>
+            <div class="range__container">
+              <h2 class="range__tittle">Definir Preço</h2>
+              <p class="range__paragraph">Até R$ ...</p>
+            </div>
+            <div class="range__controller">
+              <input id="inputRange" type="range" min="0" max="90" step="1" value="0">
+            </div>
+        
+      </section>
+      <section class="section__albuns">
+        <h2 class="albuns__tittle">Albúns Encontrados</h2>
+        <ul class="albuns__list"></ul>
+      </section>
+    </main>
     <script src="./src/scripts/theme.js"></script>
     <script src="./src/scripts/productsData.js"></script>
-    <script src="./src/scripts/index.js"></script>
+    <script type="module" src="./src/scripts/index.js"></script>
   </body>
 </html>
